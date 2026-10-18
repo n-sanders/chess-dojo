@@ -158,7 +158,9 @@ export default function Drill() {
         movable={!prompt && !whiteToMove && drill.phase !== 'outOfBook' && !status ? 'b' : null}
         lastMove={lastMoveOf(game)}
         onMove={onMove}
-      >
+      />
+
+      <div className="side">
         {prompt && (
           <IdPrompt
             key={`${drillId}-${drill.results.length}`}
@@ -167,9 +169,6 @@ export default function Drill() {
             onAnswer={onAnswer}
           />
         )}
-      </Board>
-
-      <div className="side">
         {drill.phase === 'outOfBook' && (
           <div className="banner">
             <strong>{drill.outOfBookMove}</strong> is outside {phase.label.split(' — ')[0]}. Drill stopped.

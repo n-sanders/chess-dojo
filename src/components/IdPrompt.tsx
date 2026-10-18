@@ -24,33 +24,31 @@ export default function IdPrompt({ prompt, context, onAnswer }: Props) {
   };
 
   return (
-    <div className="prompt-overlay">
-      <div className="prompt-card" role="dialog" aria-label={TITLES[prompt.kind]}>
-        <h3>{TITLES[prompt.kind]}</h3>
-        <div className="muted">{context}</div>
-        <div className="choices">
-          {prompt.choices.map((choice) => {
-            let cls = '';
-            if (picked && choice === prompt.answer) cls = 'correct';
-            else if (picked === choice) cls = 'wrong';
-            return (
-              <button key={choice} className={cls} onClick={() => pick(choice)} disabled={!!picked && !cls}>
-                {choice}
-              </button>
-            );
-          })}
-        </div>
-        {picked && !correct && (
-          <div className="row" style={{ marginTop: 12, justifyContent: 'space-between' }}>
-            <span>
-              It's <strong>{prompt.answer}</strong>.
-            </span>
-            <button className="primary" onClick={() => onAnswer(picked)} autoFocus>
-              Continue
+    <div className="panel prompt-card" role="region" aria-label={TITLES[prompt.kind]}>
+      <h3>{TITLES[prompt.kind]}</h3>
+      <div className="muted">{context}</div>
+      <div className="choices">
+        {prompt.choices.map((choice) => {
+          let cls = '';
+          if (picked && choice === prompt.answer) cls = 'correct';
+          else if (picked === choice) cls = 'wrong';
+          return (
+            <button key={choice} className={cls} onClick={() => pick(choice)} disabled={!!picked && !cls}>
+              {choice}
             </button>
-          </div>
-        )}
+          );
+        })}
       </div>
+      {picked && !correct && (
+        <div className="row" style={{ marginTop: 12, justifyContent: 'space-between' }}>
+          <span>
+            It's <strong>{prompt.answer}</strong>.
+          </span>
+          <button className="primary" onClick={() => onAnswer(picked)} autoFocus>
+            Continue
+          </button>
+        </div>
+      )}
     </div>
   );
 }

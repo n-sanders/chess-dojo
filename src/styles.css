@@ -231,23 +231,8 @@ main {
 }
 
 /* Drill */
-.prompt-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(10, 10, 12, 0.55);
-  z-index: 10;
-  border-radius: 4px;
-}
-
 .prompt-card {
-  background: var(--panel);
-  border-radius: 10px;
-  padding: 20px;
-  width: min(380px, 90%);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  border: 2px solid var(--accent);
 }
 
 .prompt-card h3 {
