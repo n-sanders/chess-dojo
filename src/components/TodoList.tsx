@@ -1,9 +1,24 @@
+import { Link } from 'react-router-dom';
+
 export type Todo = {
   id: string;
   title: string;
   url: string;
   target: number;
 };
+
+function TodoLink({ url }: { url: string }) {
+  const internal = url.startsWith('#/') || (url.startsWith('/') && !url.startsWith('//'));
+  if (!internal) {
+    return (
+      <a href={url} target="_blank" rel="noreferrer">
+        Open ↗
+      </a>
+    );
+  }
+  const to = url.startsWith('#') ? url.slice(1) : url;
+  return <Link to={to}>Open</Link>;
+}
 
 type Props = {
   todos: Todo[];
@@ -20,9 +35,7 @@ export default function TodoList({ todos, counts, onChange }: Props) {
         return (
           <li key={todo.id} className={`todo${done ? ' done' : ''}`}>
             <span className="todo-title">{todo.title}</span>
-            <a href={todo.url} target="_blank" rel="noreferrer">
-              Open ↗
-            </a>
+            <TodoLink url={todo.url} />
             {todo.target === 1 ? (
               <label className="counter toggle">
                 <input

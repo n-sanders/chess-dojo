@@ -16,5 +16,11 @@
     "title": "3 5+5 games vs chess.com bots",
     "url": "https://www.chess.com/play/computer",
     "target": 3
+  },
+  {
+    "id": "opening-drill",
+    "title": "Opening Drill practice",
+    "url": "#/drill",
+    "target": 1
   }
 ]
