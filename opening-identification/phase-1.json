@@ -1,0 +1,105 @@
+[
+  {
+    "whiteFirst": "King's Pawn",
+    "whiteMove": "e4",
+    "branches": [
+      {
+        "blackReply": "1...e5",
+        "name": "Open Game",
+        "mainLine": "1.e4 e5 2.Nf3 Nc6 3.Bc4",
+        "nextName": "Italian Game",
+        "moves": 3
+      },
+      {
+        "blackReply": "1...e5",
+        "name": "Open Game",
+        "mainLine": "1.e4 e5 2.Nf3 Nc6 3.Bb5",
+        "nextName": "Ruy Lopez",
+        "moves": 3
+      },
+      {
+        "blackReply": "1...e5",
+        "name": "Open Game",
+        "mainLine": "1.e4 e5 2.Nf3 Nc6 3.d4",
+        "nextName": "Scotch Game",
+        "moves": 3
+      },
+      {
+        "blackReply": "1...c5",
+        "name": "Sicilian Defense",
+        "mainLine": "1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4",
+        "nextName": "Open Sicilian",
+        "moves": 4
+      },
+      {
+        "blackReply": "1...c5",
+        "name": "Sicilian Defense",
+        "mainLine": "1.e4 c5 2.Nf3 Nc6 3.Bb5",
+        "nextName": "Rossolimo",
+        "moves": 3
+      },
+      {
+        "blackReply": "1...e6",
+        "name": "French Defense",
+        "mainLine": "1.e4 e6 2.d4 d5",
+        "nextName": "French Defense",
+        "moves": 2
+      },
+      {
+        "blackReply": "1...c6",
+        "name": "Caro-Kann Defense",
+        "mainLine": "1.e4 c6 2.d4 d5",
+        "nextName": "Caro-Kann Defense",
+        "moves": 2
+      },
+      {
+        "blackReply": "1...d5",
+        "name": "Scandinavian Defense",
+        "mainLine": "1.e4 d5 2.exd5 Qxd5",
+        "nextName": "Scandinavian Defense",
+        "moves": 2
+      },
+      {
+        "blackReply": "1...d6",
+        "name": "Pirc Defense",
+        "mainLine": "1.e4 d6 2.d4 Nf6 3.Nc3 g6",
+        "nextName": "Pirc Defense",
+        "moves": 3
+      }
+    ]
+  },
+  {
+    "whiteFirst": "Queen's Pawn",
+    "whiteMove": "d4",
+    "branches": [
+      {
+        "blackReply": "1...d5",
+        "name": "Queen's Pawn Game",
+        "mainLine": "1.d4 d5 2.c4",
+        "nextName": "Queen's Gambit",
+        "moves": 2
+      },
+      {
+        "blackReply": "1...d5",
+        "name": "Queen's Pawn Game",
+        "mainLine": "1.d4 d5 2.Nf3 Nf6 3.Bf4",
+        "nextName": "London System",
+        "moves": 3
+      },
+      {
+        "blackReply": "1...Nf6",
+        "name": "Indian Defense",
+        "mainLine": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4",
+        "nextName": "Nimzo-Indian",
+        "moves": 3
+      },
+      {
+        "blackReply": "1...Nf6",
+        "name": "Indian Defense",
+        "mainLine": "1.d4 Nf6 2.c4 g6 3.Nc3 Bg7",
+        "nextName": "King's Indian",
+        "moves": 3
+      }
+    ]
+  }
+]

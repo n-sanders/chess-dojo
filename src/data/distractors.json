@@ -1,0 +1,5 @@
+{
+  "white": ["English Opening", "Réti Opening", "Bird's Opening", "King's Gambit", "Larsen's Opening"],
+  "defense": ["Alekhine's Defense", "Modern Defense", "Dutch Defense", "Owen's Defense", "Nimzowitsch Defense"],
+  "variation": ["Najdorf Variation", "Dragon Variation", "Vienna Game", "Slav Defense", "Grünfeld Defense", "Petrov's Defense"]
+}

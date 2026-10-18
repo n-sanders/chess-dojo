@@ -1,0 +1,20 @@
+[
+  {
+    "id": "mate-in-1",
+    "title": "10 mate-in-1 puzzles",
+    "url": "https://lichess.org/training/mateIn1",
+    "target": 10
+  },
+  {
+    "id": "gotham",
+    "title": "1 Gotham Chess game video",
+    "url": "https://www.youtube.com/gothamchess",
+    "target": 1
+  },
+  {
+    "id": "bots-5+5",
+    "title": "3 5+5 games vs chess.com bots",
+    "url": "https://www.chess.com/play/computer",
+    "target": 3
+  }
+]
