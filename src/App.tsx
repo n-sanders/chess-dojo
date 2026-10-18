@@ -2,6 +2,7 @@ import { NavLink, Route, Routes } from 'react-router-dom';
 import Today from './pages/Today';
 import Play from './pages/Play';
 import Drill from './pages/Drill';
+import Learn from './pages/Learn';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
           <NavLink to="/" end>
             Today
           </NavLink>
+          <NavLink to="/learn">Learn Openings</NavLink>
           <NavLink to="/drill">Opening Drill</NavLink>
           <NavLink to="/play">Play</NavLink>
         </nav>
@@ -19,6 +21,7 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Today />} />
+          <Route path="/learn" element={<Learn />} />
           <Route path="/drill" element={<Drill />} />
           <Route path="/play" element={<Play />} />
         </Routes>

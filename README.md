@@ -3,6 +3,7 @@
 A personal chess practice site:
 
 - **Today** – a daily checklist that links out to external training (Lichess mate-in-1, Gotham Chess, chess.com bots). Progress resets at local midnight; a 28-day strip shows your streak.
+- **Learn Openings** – a study page for every Phase 1 line: history, why players choose it, how to recognise it, and a move-by-move breakdown with a static board diagram for each position.
 - **Opening Drill** – Stockfish plays White from the book in `opening-identification/phase-1.json`. You play Black and name each opening as it appears (multiple choice). When the book line ends, the game continues as free play against Stockfish. Playing outside Phase 1 stops the drill; you can keep playing or start a new one.
 - **Play** – a regular game against Stockfish as either color.
 
@@ -22,6 +23,7 @@ npm run build    # static site in dist/
 - **Daily tasks:** edit `src/data/todos.json` (`id`, `title`, `url`, `target`). A target of 1 shows a checkbox; larger targets show a counter.
 - **Multiple-choice filler names:** `src/data/distractors.json`.
 - **Opening phases:** add `opening-identification/phase-2.json` in the same format, then register it in `src/openings/phases.ts`. Lines are validated with chess.js at startup and in `npm test`.
+- **Opening lessons:** text for the Learn Openings page lives in `src/data/openingLessons.ts`, keyed by the names in the phase file (one step caption per half-move of each `mainLine`). `npm test` fails if a line is missing a lesson or its step count doesn't match.
 
 ## Engine strength
 
